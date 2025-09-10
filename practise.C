@@ -1,20 +1,19 @@
+
 #include<stdio.h>
 #include<string.h>
 int main()
 {
-    char a[100];
-    char b[100];
-    scanf("%s",a);
-    scanf("%s",b);
-    int i;
-    int len_a=strlen(a);//library function for findout the string length.
-    int len_b=strlen(b);
-    for(int i=0;a[i]!='\0'||b[i]!='\0';i++){
-        if(a[i]!=b[i]){
-            printf("No");
-        }
-        else 
-        printf("Yes");
-    }
-}
-    
+    char a[100]="ya";
+    char b[100]="yam";
+    int ab=strcmp(a,b);//strcmp is a string compare function.
+    printf("%d",ab);
+    /*
+    note:
+    (1)If you get the output is o,
+    Both string are same.
+    (2)IF you get the output is -ve
+    the second string is bigger then first string
+    (3)If you get the output is +ve 
+    the first string is Bigger then second string
+    */
+}  
