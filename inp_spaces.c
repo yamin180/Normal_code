@@ -2,7 +2,8 @@
 #include<string.h>
 int main()
 {
-    char a[67]="UIU";
+    char a[67];
+    scanf("%[^\n]",a);
     int i,j,temp;
     int length=strlen(a);
     for(i=0,j=length-1;i<=j;i++,j--){
